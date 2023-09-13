@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="menu-items">JS Document</div>
+        <div class="menu-item" id="id1"> Introduction</div>
+        <div class="menu-item" id="id2">What You Should Already Know</div>
+        <div class="menu-item" id="id7">Javascript And Java</div>
+
+        <div class="menu-item" id="id3">Hello World</div>
+        <div class="menu-item" id="id4">Variable</div>
+        <div class="menu-item" id="id5">Declearing Variable</div>
+        <div class="menu-item" id="id6">Variable Scope</div>
+
+    </div>
+
+    <div class="content">
+
+
+        <!--intoduction-->
+        <div id="content1">
+            <h1>Introduction</h1>
+            <p>JavaScript is cross platform, object oriented scripting language</p>
+            <p>JavaScript is a programming language that makes websites interactive and dynamic. With JavaScript, you can make a webpage respond to user actions, like clicking buttons or entering information, and update content without needing to refresh
+                the whole page.
+                <p> It's used to create things like pop-up messages, interactive forms, and animations on webpages.</p>
+            </p> It's a fundamental technology for modern web development and adds life and functionality to websites.</p>
+            <p>
+        </div>
+
+
+
+
+        <!---alreadu know-->
+
+        <div id="content2" style="display: none;">
+            <h1 class="head1">Already Know</h1>
+            <ul class="list1">
+                <li><strong>Variables:</strong> How to declare and assign values to variables.</li>
+                <li><strong>Data Types:</strong> Understanding basic data types such as strings, numbers, booleans, objects, and arrays.</li>
+                <li><strong>Functions:</strong> Creating reusable blocks of code with functions, including parameters and return values.</li>
+                <li><strong>Conditional Statements:</strong> Using `if`, `else if`, and `else` for decision-making.</li>
+                <li><strong>Loops:</strong> Employing `for` and `while` loops for repetitive tasks and iterating over data.</li>
+
+                <li><strong>Arrays:</strong> arrays, including methods like push, pop, forEach, and how to manipulate array data. </li>
+
+            </ul>
+        </div>
+        <!----hello world-->
+        <div id="content3" style="display: none;">
+            <h1 class="head1">Hello World</h1>
+            <div class="box3">
+                <button id="showMessageButton">Click Me</button>
+                <div id="message"></div>
+            </div>
+            <script>
+                document.getElementById("showMessageButton").addEventListener("click", function() {
+                    document.getElementById("message").textContent = "Hello, World!";
+                });
+            </script>
+            <p class="content3">we have a button with the id "showMessageButton" and an empty div element with the id "message."
+            </p>
+            <p class="content31"> The JavaScript code listens for a click event on the button, and when the button is clicked, it sets the content of the "message" div to "Hello, World!" using the textContent property.</p>
+        </div>
+
+        <!---variables-->
+        <div id="content4" style="display: none;">
+            <h1 class="head1">Variables</h1>
+            <p class="content41">a variable is a named container that can hold various types of data, such as numbers, strings, or objects.
+            </p>
+            <p class="content41"> Variables are used to store and manage information in your code. You can assign values to variables, update those values, and use the
+            </p>
+            <p> variable's name to access the stored data, making your JavaScript programs dynamic and flexible.</p>
+            </p>
+        </div>
+
+
+        <!----declearing variable-->
+        <div id="content5" style="display: none;">
+            <h1 class="head1">Declearing Variable</h1>
+            <div class="box2">
+                <ul class="list2">
+                    <li>var <strong>(Variable):</strong></li>
+                    <p>Variables declared with var are function-scoped, which means they are only accessible within the function they are defined in. If declared outside of any function, they are globally scoped.</p>
+                    <p>They can be re-declared within the same scope without any error.</p>
+                </ul>
+                <ul class="list2">
+                    <li>let <strong> (Block-Scoped Variable):</strong></li>
+                    <p>Variables declared with let are block-scoped, which means they are only accessible within the block in which they are defined.</p>
+                    <p>They can be updated but not re-declared in the same scope.</p>
+                </ul>
+                <ul class="list2">
+                    <li>const <strong>(Constant):</strong></li>
+                    <p>Variables declared with const are also block-scoped like let.</p>
+                    <p>However, they cannot be re-assigned once they are given a value. They are constant.</p>
+                    <div>
+                        const z = 5; z = 10; const z = 20;
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <!----variable scope-->
+        <div id="content6" style="display: none;">
+            <h1 class="head1">Variable Scope</h1>
+            <div>
+
+                <ul class="list3">
+                    <li> <strong>Global Scope:</strong></li>
+
+                    <p>Variables declared outside of any function or code block have global scope.
+                    </p>
+                    <p>Global variables are accessible from anywhere in your JavaScript code, including inside functions.
+                    </p>
+                    <p>Be cautious with global variables as they can lead to unintended side effects and make your code harder to maintain.
+                    </p>
+                </ul>
+            </div>
+            <div class="box4">
+                <ul>
+                    <li> <strong>Local Scope</strong></li>
+                </ul>
+
+
+                <p>Variables declared within a function have local scope, which means they are only accessible within that function.
+                </p>
+                <p>Local variables are isolated from the rest of the code, reducing the risk of unintended changes or conflicts.
+                </p>
+
+
+            </div>
+        </div>
+        <!--js and java-->
+        <div id="content7" style="display: none;">
+            <ul>
+                <li> <strong>JavaScript:</strong></li>
+                <p>avaScript is primarily a client-side scripting language used for web development. It is embedded in web browsers and is used to create interactive and dynamic web pages. JavaScript allows you to add behavior and interactivity to web applications.</p>
+                <p>JavaScript code is executed by web browsers and can manipulate the Document Object Model (DOM) of web pages. It runs in a browser's sandboxed environment.</p>
+                <p>JavaScript uses loosely typed variables and has dynamic data structures like objects and arrays.</p>
+                <p>JavaScript has a massive and active community, with numerous libraries and frameworks (e.g., React, Angular, Vue.js) for various purposes.</p>
+            </ul>
+
+            <ul>
+                <li> <strong>Java</strong></li>
+                <p>Java is a general-purpose programming language that can be used for various purposes, including web development (Java EE), desktop application development (Java SE), mobile app development (Android), and server-side development (Java Spring).
+                    It is known for its platform independence and "write once, run anywhere" philosophy.</p>
+                <p>Java has a more strict and statically-typed syntax. Variable types must be declared explicitly, and type checking is done at compile-time.</p>
+                <p>Java applications are compiled into bytecode, which is executed by the Java Virtual Machine (JVM). Java can run on various platforms as long as there is a compatible JVM available.</p>
+
+                <p>Java also has a large community and is widely used in enterprise-level applications. It has a rich ecosystem of libraries and frameworks (e.g., Spring, Hibernate).</p>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <script src="index.js">
+    </script>
+
+</body>
+
+
+</html>
